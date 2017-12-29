@@ -1,0 +1,51 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+{% block contenido %}
+<img class="img-fluid w-100" id="imgNosotros" src="{{ asset('bundles/pagina/img/Nosotros.jpg')}}">
+
+<div class="container">
+    <p class="text-center font-weight-bold" style="font-size:30px">Warriors® nace en un corporativo consultor,<br>
+desarrollador e integrador de soluciones tecnológicas<br>
+para aumentar la productividad empresarial, DSCORP S.A de C.V.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img src="{{ asset('bundles/pagina/img/vision.png')}}" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h1 class="card-title font-weight-bold">Visión</h1>
+        <p class="card-text" style="font-size:20px">Ser una compañía líder en el ramo de la seguridad informática con
+          presencia global desarrollando productos que no solo compitan, sino
+          que superen a la competencia</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-body">
+        <h1 class="card-title font-weight-bold">Misión</h1>
+        <p class="card-text" style="font-size:20px">
+          Ofrecer a nuestros clientes productos y servicios de calidad por
+          medio de un canal profesional a nivel global que superen sus expectativas
+          de seguridad en tecnología de la información.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img src="{{ asset('bundles/pagina/img/mision.png')}}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

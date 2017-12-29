@@ -1,0 +1,71 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+
+{% block contenido %}
+<br><br><br><br>
+<img src="{{ asset('bundles/pagina/img/WDPCDIAGRAMA.jpg')}}" class="img-fluid w-100">
+<br><br>
+<div class="container">
+  <div class="row">
+      <img src="{{ asset('bundles/pagina/img/warriors_portal_cautivo.png')}}" class="img-fluid mx-auto d-block">
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <img class="img-fluid mx-auto d-block" src="{{ asset('bundles/pagina/img/equipon4.png')}}" alt="">
+  </div>
+</div>
+
+<div class="divider-new pt-2">
+    <h1 class="h1-responsive wow fadeIn font-bold" data-wow-delay="0.2s">Warriors Defender Portal Cautivo (WDPC)</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="text-center">
+        Es una solución especializada que controla el acceso a internet por medio de usuarios y contraseñas.<br>
+        Con WDCP autentifique y controle el ancho de banda en su navegación.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3 class="text-center font-weight-bold red-text">Características</h3>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        Límite de ancho de banda (IN/OUT).<br>
+        Control de acceso por horario.<br>
+        Control de acceso por consumo de ancho banda.<br>
+        Redireccionamiento a página WEB, definida por el cliente.<br>
+        Control de cuentas/usuarios por Maclist.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p>
+        Backup & Restore de la configuración del Portal Cautivo.<br>
+        Alta de cuentas/usuarios desde la base de datos: RADIUS, MySQL y/o LDAP.<br>
+        Control de conexiones concurrentes.<br>
+        Interfaz de acceso personalizado por medio de HTTP o HTTPS.<br>
+        Aplicación de excepciones por Mac, IP o Dominio.<br>
+        Entre otras.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}

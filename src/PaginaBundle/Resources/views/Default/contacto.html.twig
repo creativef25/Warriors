@@ -1,0 +1,88 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+
+{% block carousel %}{% endblock %}
+{% block contenido %}{% endblock %}
+
+{% block contacto %}
+<br>
+<div class="divider-new pt-5">
+    <h1 class="h1-responsive wow fadeIn font-bold" data-wow-delay="0.2s">Contacto</h1>
+</div>
+<!--Section: Contact-->
+<div class="container">
+    <div class="row">
+        <!--First column-->
+        <div class="col-md-8 mb-5">
+            <div id="map-container" class="z-depth-1 wow fadeIn" style="height: 400px"></div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4">
+            <ul class="text-center list-unstyled">
+                <li class="wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-map-marker red-text fa-lg"></i>
+                    <p>
+                      Pedro Santacilia 258 Int 1,<br>
+                      Col. Iztaccihuatl. C.P.03520,<br>
+                      Benito Juárez, Ciudad de México.
+                    </p>
+                </li>
+
+                <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.3s"><i class="fa fa-phone red-text fa-lg"></i>
+                    <p>
+                      (55)5579 2273 <br>
+                      (55)5698 9651 <br>
+                      (55)2535 5159
+                    </p>
+                </li>
+
+                <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.4s"><i class="fa fa-envelope red-text fa-lg"></i>
+                    <p>info@warriorslabs.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--/Second column-->
+    </div>
+</div>
+<!--Section: Contact-->
+
+<div class="container">
+  <form class="" action="/enviar_mail" method="post">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-user prefix"></i>
+          <input type="text" id="form1" class="form-control" name="nombre" required>
+          <label for="form1">Nombre</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-envelope prefix"></i>
+          <input type="email" id="form2" class="form-control validate" name="correo" required>
+          <label for="form2" data-error="Invalido" data-success="Valido">Correo</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="md-form">
+          <i class="fa fa-pencil prefix"></i>
+          <textarea type="text" id="form3" class="md-textarea" name="mensaje" required></textarea>
+          <label for="form3">Mensaje</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="md-form form-group ">
+          <center><button class="btn red darken-1 btn-lg" type="submit">Enviar</button><center>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

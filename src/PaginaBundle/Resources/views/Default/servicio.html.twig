@@ -1,0 +1,112 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+{% block contenido %}
+<br>
+<div class="container">
+  <div class="divider-new pt-5">
+      <h1 class="h1-responsive wow fadeIn font-bold" data-wow-delay="0.2s">Servicios</h1>
+  </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid animated jello" src="{{ asset('bundles/pagina/img/1.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Mesa de ayuda</h4>
+              <p class="card-text text-center">
+                Herramienta adicional para brindar una
+                mejor calidad de atención a nuestros clientes
+                ¡Próximamente!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid animated jello" src="{{ asset('bundles/pagina/img/2.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Certificaciones</h4>
+              <p class="card-text text-center">¡Próximamente!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid animated jello" src="{{ asset('bundles/pagina/img/3.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Instalación/puesta a punto</h4>
+              <p class="card-text text-center">
+                Contamos con Ingenieros especializados que
+                realizan previamente un estudio actual de su
+                red, asimismo, brindan las recomendaciones
+                necesarias para un mayor rendimiento de la
+                red.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid wow jello" src="{{ asset('bundles/pagina/img/4.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Soporte</h4>
+              <p class="card-text text-center">
+                En Warriors nos caracterizamos por
+                nuestro excelente servicio de soporte
+                técnico, el cual es un beneficio más que le
+                otorgamos sin ningún costo adicional. Cabe
+                señalar que nuestro personal de
+                soporte técnico cuenta con la más amplia
+                experiencia en el dominio de las
+                herramientas propias y de los conocimientos
+                ajenos al equipo que suelen necesitarse a
+                menudo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid wow jello" src="{{ asset('bundles/pagina/img/5.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Capacitacion</h4>
+              <p class="card-text text-center">
+                Brindamos a nuestros clientes cursos de capacitación
+                para la operación del equipo ya
+                sea vía remota o presencial. Para mayor información
+                comunicarse en los teléfonos 52 55 5579 2273,
+                52 55 5698 9651 y 01 800 087 1097
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="img-fluid wow jello" src="{{ asset('bundles/pagina/img/6.png')}}">
+            <div class="card-body">
+              <h4 class="card-title text-center">Centro de monitoreo</h4>
+              <p class="card-text text-center">
+                Registra eventos que se presenten tanto en el
+                software como en el hardware del equipo,
+                por ejemplo: la carga del nivel de procesamiento,
+                el estado del disco, la disponibilidad
+                de la red, entre otros. Esto con la finalidad
+                que el Departamento de Soporte anticipe
+                cualquier tipo de incidencia que afecte el funcionamiento
+                del equipo.
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+{% endblock %}

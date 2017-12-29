@@ -1,0 +1,140 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+{% block contenido %}
+<br>
+<div class="divider-new pt-5">
+    <h2 class="h2-responsive wow fadeIn font-bold" data-wow-delay="0.2s">Sea Un Socio</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="text-center font-bold" style="font-size:30px">
+        Si usted está interesado en unirse y busca una oportunidad
+        para el crecimiento de su negocio, complete el formulario que
+        aparece a continuación y a la brevedad estaremos en
+        contacto.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <form class="" action="/enviar_socio" method="post">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="md-form">
+          <input type="text" id="form1" class="form-control" name="empresa" required>
+          <label for="form1">Empresa</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="md-form">
+          <input type="text" id="form2" class="form-control" name="nombre" required>
+          <label for="form2">Nombre Completo</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="tipoCliente">Tipo de Cliente</label>
+          <select class="form-control" id="tipoCliente" name="select1" required>
+            <option value="" disabled selected>Opciones</option>
+            <option value="opcion1">Opcion1</option>
+            <option value="opcion2">Opcion2</option>
+            <option value="opcion3">Opcion3</option>
+          </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="email" id="form3" class="form-control validate" name="correo" required>
+        <label for="form3" data-error="Invalido" data-success="Valido">Correo</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="paisMenu">Pais</label>
+        <select class="form-control" id="paisMenu" name="select2" required>
+          <option value="" disabled selected>Opciones</option>
+          <option value="opcion1">Opcion1</option>
+          <option value="opcion2">Opcion2</option>
+          <option value="opcion3">Opcion3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="text" id="form4" class="form-control" name="ciudad" required>
+        <label for="form3">Ciudad</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="text" id="form5" class="form-control" name="cp" required>
+        <label for="form5">Codigo Postal</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="text" id="form6" class="form-control" name="direccion" required>
+        <label for="form6">Direccion</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="text" id="form7" class="form-control" name="datos" required>
+        <label for="form7">RUT/RUC/NIC/NIT/RFC</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="md-form">
+        <input type="text" id="form8" class="form-control" name="comentarios" required>
+        <label for="form8">Comentarios</label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="md-form form-group ">
+        <center><button class="btn red darken-1 btn-lg" type="submit" onclick="toastr.success('Hi! I am success message.');">Enviar</button><center>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+<div class="container">
+  <div class="divider-new">
+      <h2 class="h2-responsive wow fadeIn">Socios</h2>
+  </div>
+
+  <div class="card text-center wow fadeInDown">
+  <div class="card-header red darken-4 white-text">
+      <h1>Nuestros Socios</h1>
+  </div>
+  <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset('bundles/pagina/img/casco.png')}}" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h1 class="card-title">Nombre</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+{% endblock %}

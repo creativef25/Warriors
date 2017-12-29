@@ -1,0 +1,67 @@
+pagina_homepage:
+    path:     /
+    defaults: { _controller: PaginaBundle:Default:index }
+
+contacto:
+    path: /contacto
+    defaults: { _controller: PaginaBundle:Default:contacto }
+
+quienes:
+  path: /quienes
+  defaults: { _controller: PaginaBundle:Default:quienes}
+
+servicios:
+  path: /servicios
+  defaults: { _controller: PaginaBundle:Default:servicios}
+
+socios:
+  path: /socios
+  defaults: { _controller: PaginaBundle:Default:socios}
+
+blog:
+  path: /blog
+  defaults: { _controller: PaginaBundle:Default:blog}
+
+corporativo:
+  path: /corporativo
+  defaults: { _controller: PaginaBundle:Default:corporativo}
+
+gobierno:
+  path: /gobierno
+  defaults: { _controller: PaginaBundle:Default:gobierno}
+
+educacion:
+  path: /educacion
+  defaults: { _controller: PaginaBundle:Default:educacion}
+
+wmail:
+  path: /wmail
+  defaults: { _controller: PaginaBundle:Default:wmail}
+
+ips:
+  path: /ips
+  defaults: { _controller: PaginaBundle:Default:ips}
+
+storage:
+  path: /storage
+  defaults: { _controller: PaginaBundle:Default:storage}
+
+newgeneration:
+  path: /newgeneration
+  defaults: { _controller: PaginaBundle:Default:newgeneration}
+
+portalcautivo:
+  path: /portalcautivo
+  defaults: { _controller: PaginaBundle:Default:portalcautivo}
+
+firewall:
+  path: /firewall
+  defaults: { _controller: PaginaBundle:Default:firewall}
+
+enviar_mail:
+  path: /enviar_mail
+  defaults: { _controller: PaginaBundle:Default:enviarMail}
+
+enviar_socio:
+  path: /enviar_socio
+  defaults: { _controller: PaginaBundle:Default:enviarSocio}

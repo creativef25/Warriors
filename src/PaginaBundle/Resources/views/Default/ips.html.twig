@@ -1,0 +1,56 @@
+{% extends 'PaginaBundle:Default:frontend.html.twig' %}
+
+{% block carousel %}{% endblock %}
+
+{% block contenido %}
+<br><br><br><br>
+  <img src="{{ asset('bundles/pagina/img/IDS-IPS.png')}}" class="img-fluid w-100">
+<br><br>
+<div class="container">
+  <div class="row">
+    <img src="{{ asset('bundles/pagina/img/warriors_ids_ips.png')}}" class="img-fluid mx-auto d-block">
+  </div>
+</div>
+<div class="divider-new pt-2">
+    <h1 class="h1-responsive wow fadeIn font-bold" data-wow-delay="0.2s">Warriors Defender IPS/IDS (WDIPS/IDS)</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        Warriors Defender IPS/IDS es una solución orientada a
+        la prevención y detección de intrusiones debido a que
+        un firewall sólo te permite bloquear el tráfico basado en
+        origen, destino y puertos, con WDIPS/IDS agrega otra
+        línea de defensa la cual tiene la capacidad de analizar el
+        contenido del tráfico con el fin de proteger su red de
+        cibercriminales mitigando las amenazas externas que
+        puedan llegar a dispositivos potencialmente
+        vulnerables.
+      </p>
+    </div>
+    <div class="col-md-6">
+        <img class="img-fluid" src="{{ asset('bundles/pagina/img/equipon2.png')}}" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <h3 class="text-center font-weight-bold red-text">Herramientas de monitoreo por:</h3>
+        <p class="text-center">
+          Vista Dinámica- eventos tiempo real.<br>
+          Cantidad de eventos totales.<br>
+          Eventos y severidad.<br>
+          Vista origen- destino de los ataques.
+        </p>
+
+      </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
