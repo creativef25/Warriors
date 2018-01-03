@@ -78,7 +78,37 @@
     <div class="row">
       <div class="col">
         <div class="md-form form-group ">
-          <center><button class="btn red darken-1 btn-lg" type="submit">Enviar</button><center>
+          <center><button type="button" class="btn red darken-1 btn-lg" data-toggle="modal" data-target="#centralModalSuccess">Enviar</button></center>
+        </div>
+
+        <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">Envio de datos Exitoso</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                        <p>Se envio correctamente tu informacion</p>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                  <button type="submit" class="btn btn-primary-modal">Aceptar</button>
+                  <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">Cancelar</a>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
